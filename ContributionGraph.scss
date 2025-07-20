@@ -1,0 +1,148 @@
+.contribution-graph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .months {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .month {
+        width: 50px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .graph-container {
+        display: flex;
+        flex-direction: row; /* Pour avoir les semaines en colonnes */
+    }
+
+    .week-days {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    .day-name {
+        text-align: center;
+        font-weight: bold;
+        font-size: 12px;
+        color: #555;
+    }
+
+    .graph {
+        display: flex;
+        flex-direction: row; /* Chaque semaine sera une colonne */
+        flex-wrap: nowrap; /* Pas de retour à la ligne */
+        max-width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .week {
+        display: flex;
+        flex-direction: column;
+        margin: 2px;
+        align-items: center; /* Pour centrer les jours dans chaque colonne */
+    }
+
+    .day {
+        width: 14px;
+        height: 14px;
+        margin: 1px;
+        border-radius: 3px;
+        position: relative;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .legend {
+        margin-top: 20px;
+        font-size: 14px;
+
+        .color-box {
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+    }
+
+    .tooltip {
+        background-color: rgba(0, 0, 0, 0.75);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        pointer-events: none;
+        z-index: 10;
+    }
+}
+
+.month-container {
+    margin-bottom: 30px;
+}
+
+.month-name {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.month-graph {
+    display: flex;
+}
+
+.graph {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.week-days {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.day-name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    color: #555;
+}
+
+.week {
+    display: flex;
+    flex-direction: row;
+}
+
+.day {
+    width: 14px;
+    height: 14px;
+    margin: 1px;
+    border-radius: 3px;
+    position: relative;
+}
